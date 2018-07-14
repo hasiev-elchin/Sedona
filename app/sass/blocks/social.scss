@@ -1,0 +1,46 @@
+.social {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.social__item {
+  margin-right: 6px;
+}
+
+.social__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .3s background-color;
+
+  & path {
+    transition: .3s fill;
+  }
+  
+  &:hover {
+    background-color: #669ec0;
+  }
+  
+  &:active {
+    background-color: #5496bd;
+
+    & path {
+      fill: #88b6d1;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-bottom: 0;
+  }
+}

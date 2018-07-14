@@ -1,0 +1,30 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 20px;
+  padding-bottom: 30px;
+
+  background-color: #fefefe;
+}
+
+.page-footer__tag {
+  margin: 0;
+  margin-bottom: 40px;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .page-footer__tag {
+    margin: 0;
+  }
+}

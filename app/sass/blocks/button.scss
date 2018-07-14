@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  padding: 15px 47px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .3s color, .3s background-color;
+
+  &:disabled,
+  &--disabled {
+    background-color: #e5e5e5;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+  
+  &:active {
+    color: rgba(255,255,255, .3);
+
+    background-color: #5496bd;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 15px 135px;
+  }
+}

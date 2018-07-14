@@ -1,0 +1,38 @@
+.promo {
+  position: relative;
+
+  height: 389px;
+
+  background-image: url(../img/promo-text.svg), url(../img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto, cover;
+}
+
+@media (max-width: $mobile-width-only) {
+  .promo {
+    @include bottom-arrow-bg(26px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    height: 518px;
+
+    background-image: url(../img/promo-text-tablet.svg), url(../img/promo-bg.jpg);
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .promo {
+    @include bottom-arrow-2-bg(57px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    height: 518px;
+
+    @include bottom-arrow-3-bg(57px);
+  }
+}

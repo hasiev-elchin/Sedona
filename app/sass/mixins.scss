@@ -1,0 +1,152 @@
+@mixin list-reset() {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+@mixin bottom-arrow-bg($height) {
+  &::before {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: $height;
+
+    clip-path: polygon(
+      100% 0,
+      50% 100%,
+      100% 100%
+    );
+
+    background-color: #fff;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: $height;
+
+    clip-path: polygon(
+      0 0,
+      50% 100%,
+      0 100%
+    );
+
+    background-color: #fff;
+  }
+}
+
+@mixin top-arrow-bg($height) {
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: $height;
+
+    clip-path: polygon(
+      0 0,
+      50% 100%,
+      100% 0,
+      0 0
+    );
+
+    background-color: #fff;
+  }
+}
+
+@mixin bottom-arrow-2-bg($height) {
+  &::before {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 50%;
+    height: $height;
+
+    clip-path: polygon(
+      100% 100%,
+      10% 0,
+      10% 40%,
+      0 25%,
+      0 100%
+    );
+    background-color: #fff;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 50%;
+    height: $height;
+
+    clip-path: polygon(
+      0 100%,
+      90% 0,
+      90% 40%,
+      100% 25%,
+      100% 100%
+    );
+    background-color: #fff;
+  }
+}
+
+@mixin bottom-arrow-3-bg($height) {
+  &::before {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 50%;
+    height: $height;
+
+    clip-path: polygon(
+      0 0,
+      40% 40%,
+      40% 0,
+      100% 100%,
+      0 100%
+    );
+    background-color: #fff;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 50%;
+    height: $height;
+
+    clip-path: polygon(
+      0 100%,
+      60% 0,
+      60% 40%,
+      100% 0,
+      100% 100%
+    );
+    background-color: #fff;
+  }
+}

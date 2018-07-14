@@ -1,0 +1,19 @@
+.page,
+.page__body {
+  padding: 0;
+  margin: 0;
+}
+
+.page__body {
+  min-width: 320px;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  color: #333;
+
+  background-color: #f2f2f2;
+}
